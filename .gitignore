@@ -1,0 +1,18 @@
+# Enfusion/Workbench generated state
+resourceDatabase.rdb
+*.rdb
+*.log
+*.mdmp
+*.dmp
+/.vscode/
+/profile/
+/logs/
+/addons/
+/cache/
+/thumbnails/
+/autosaves/
+/build/
+/dist/
+__pycache__/
+
+# Keep authored .meta files: their resource GUIDs are part of the project.

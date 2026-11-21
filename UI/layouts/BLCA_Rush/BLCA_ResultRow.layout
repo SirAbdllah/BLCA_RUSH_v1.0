@@ -1,0 +1,24 @@
+SizeLayoutWidgetClass {
+ Name "RushResultRow"
+ Slot LayoutSlot { HorizontalAlign 3 }
+ AllowHeightOverride 1
+ HeightOverride 30
+ "Ignore Cursor" 1
+ {
+  FrameWidgetClass {
+   Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 }
+   "Ignore Cursor" 1
+   {
+    ImageWidgetClass { Name "RowBackground" Slot FrameWidgetSlot { Anchor 0 0 1 1 OffsetBottom 1 OffsetLeft 0 OffsetTop 0 OffsetRight 0 } Color 0.081 0.14 0.18 1 "Ignore Cursor" 1 }
+    ImageWidgetClass { Name "LocalPlayerRule" Slot FrameWidgetSlot { Anchor 0 0 0 1 OffsetRight -3 OffsetBottom 1 OffsetLeft 0 OffsetTop 0 } "Is Visible" 0 Color 0.38 0.8 1 1 "Ignore Cursor" 1 }
+    TextWidgetClass { Name "Rank" Slot FrameWidgetSlot { Anchor 0.018 0 0.083 1 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 0.55 0.74 0.83 1 "Font Size" 17 "Min Font Size" 13 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 Clipping True  }
+    TextWidgetClass { Name "Name" Slot FrameWidgetSlot { Anchor 0.095 0 0.51 1 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 0.93 0.97 1 1 "Font Size" 17 "Min Font Size" 13 "Horizontal Alignment" Left "Vertical Alignment" Center "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 } }
+    TextWidgetClass { Name "Score" Slot FrameWidgetSlot { Anchor 0.515 0 0.637 1 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 0.7 0.9 1 1 "Font Size" 17 "Min Font Size" 13 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 } }
+    TextWidgetClass { Name "Kills" Slot FrameWidgetSlot { Anchor 0.638 0 0.705 1 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 0.86 0.94 0.98 1 "Font Size" 17 "Min Font Size" 13 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 Clipping True  }
+    TextWidgetClass { Name "Deaths" Slot FrameWidgetSlot { Anchor 0.706 0 0.773 1 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 0.86 0.94 0.98 1 "Font Size" 17 "Min Font Size" 13 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 Clipping True  }
+    TextWidgetClass { Name "Plants" Slot FrameWidgetSlot { Anchor 0.775 0 0.873 1 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 0.86 0.94 0.98 1 "Font Size" 17 "Min Font Size" 13 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 Clipping True  }
+    TextWidgetClass { Name "Defuses" Slot FrameWidgetSlot { Anchor 0.873 0 0.985 1 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 0.86 0.94 0.98 1 "Font Size" 17 "Min Font Size" 13 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 Clipping True  }
+   }
+  }
+ }
+}

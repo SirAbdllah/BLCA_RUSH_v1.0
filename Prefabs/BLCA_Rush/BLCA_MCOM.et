@@ -1,0 +1,100 @@
+GenericEntity {
+ ID "AC26F95C0B6DB57D"
+ components {
+  Hierarchy "{BAED2CA46376158F}" {}
+  RplComponent "{FE6FB2C67CDE8EC6}" {}
+  BLCA_RushObjectiveComponent "{02C1D77190A5C170}" {}
+  ActionsManagerComponent "{3F7F13EC495E8822}" {
+   ActionContexts {
+    UserActionContext "{1B68BE2998A99DA2}" {
+     ContextName "MCOM"
+     Position PointInfo "{4E405569F9A31894}" { Offset 0 0.25 0 }
+     Radius 2.75
+     Omnidirectional 1
+    }
+   }
+   additionalActions {
+    BLCA_RushObjectiveAction "{45F431FBD84DF4E5}" {
+     ParentContextList { "MCOM" }
+     Duration 4
+    }
+    BLCA_RushObjectiveAction "{3AA55F877AC7C574}" {
+     ParentContextList { "MCOM" }
+     Duration 5
+     m_Defuse 1
+    }
+   }
+  }
+ }
+ {
+  GenericEntity BLCA_Table {
+   coords 0 -0.86 0
+   angles 0 0 0
+   scale 1
+   components { Hierarchy "{89641E69F7A0489C}" {} MeshObject "{61BCBA414316BECE}" { Object "{71FCFED79B3ABBA7}Assets/Props/Military/Furniture/US/TableMilitary_US_01.xob" } }
+  }
+  GenericEntity BLCA_Console {
+   coords 0 0 0
+   angles 0 0 0
+   scale 1
+   components { Hierarchy "{5553BEC35F4D4675}" {} BLCA_RushVisualPart "{58B4C2AE1F10EC00}" { Kind 0 } MeshObject "{8C4247AC0D8AB8D4}" { Object "{1C690C170310109F}Assets/Props/Military/Radios/RadioStation_ANGRC160_01.xob" } }
+  }
+  GenericEntity BLCA_Case {
+   coords 0.52 -0.86 0
+   angles 0 90 0
+   scale 1
+   components { Hierarchy "{2727343524E44DC8}" {} MeshObject "{57142BEC0A2448A2}" { Object "{9F3EBDC04E344A36}Assets/Props/Military/AmmoBox/AmmoBox_556x45_1680rnd/AmmoBox_556x45_1680rnd.xob" } }
+  }
+  GenericEntity BLCA_Charge {
+   components { BLCA_RushVisualPart "{58B4C2AE1F10EC01}" { Kind 1 } Hierarchy "{5124778DEBFA365D}" {} }
+   {
+  GenericEntity BLCA_Brick_0 {
+   coords -0.19 0.02 -0.23
+   angles 0 90 0
+   scale 1.15
+   components { Hierarchy "{DEDE04F6C3A34BE7}" {} MeshObject "{BF87AAB76A272D52}" { Object "{AF064FFD5FFCB477}Assets/Weapons/Explosives/DemoBlock_M112/DemoBlock_M112.xob" } }
+  }
+  GenericEntity BLCA_Brick_1 {
+   coords -0.01 0.02 -0.23
+   angles 0 90 0
+   scale 1.15
+   components { Hierarchy "{FBE90AB93D4E4F9D}" {} MeshObject "{88DCBAF94B0D9597}" { Object "{AF064FFD5FFCB477}Assets/Weapons/Explosives/DemoBlock_M112/DemoBlock_M112.xob" } }
+  }
+  GenericEntity BLCA_Brick_2 {
+   coords 0.17 0.02 -0.23
+   angles 0 90 0
+   scale 1.15
+   components { Hierarchy "{DF3463A900E943EB}" {} MeshObject "{D5CF5706FA9BF0B6}" { Object "{AF064FFD5FFCB477}Assets/Weapons/Explosives/DemoBlock_M112/DemoBlock_M112.xob" } }
+  }
+  GenericEntity BLCA_Detonator {
+   coords 0.38 0.105 -0.18
+   angles 0 0 0
+   scale 1
+   components { Hierarchy "{90FA7F8EFB804DBA}" {} MeshObject "{8103322D797B3840}" { Object "{C13578ECF13ADD63}Assets/Weapons/Explosives/BlastingMachine_M34/BlastingMachine_M34.xob" } }
+  }
+  GenericEntity BLCA_Wiring {
+   coords 0.30 0.025 -0.19
+   angles 0 0 0
+   scale 1
+   components { Hierarchy "{90D4055FC3D54396}" {} MeshObject "{6CADEAA49189CD05}" { Object "{60DBB84B7B5EF04E}Assets/Weapons/Explosives/BlastingMachine_M34/BlastingMachine_M34_Wires.xob" } }
+  }
+   }
+  }
+  GenericEntity BLCA_Wreck {
+   coords 0 -0.86 0
+   angles 0 16 0
+   scale 0.8
+   components { Hierarchy "{51DAD2C355F34260}" {} BLCA_RushVisualPart "{58B4C2AE1F10EC02}" { Kind 2 } MeshObject "{E4282E38EB8EC5BB}" { Object "{5C3F543D635BEFE9}Assets/Props/Military/Generators/GeneratorPortable_US_01/dst/GeneratorPortable_US_01_dst_01.xob" } }
+  }
+  LightEntity BLCA_StatusLight {
+   components { Hierarchy "{CEAE61838E4093F0}" {} BLCA_RushVisualPart "{58B4C2AE1F10EC03}" { Kind 3 } }
+   coords 0 0.35 -0.17
+   Color 0.08 0.8 0.15 1
+   LV 1
+   CastShadow 0
+   Type Point
+   Radius 1.4
+   NearPlane 0.01
+  }
+ }
+}

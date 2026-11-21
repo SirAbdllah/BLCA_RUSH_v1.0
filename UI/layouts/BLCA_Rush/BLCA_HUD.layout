@@ -1,0 +1,360 @@
+FrameWidgetClass { Name "RushHUD" Slot FrameWidgetSlot { Anchor 0 0 1 1 } "Ignore Cursor" 1 "Is Enabled" 0
+{
+FrameWidgetClass { Name "RushStatus" Slot FrameWidgetSlot { Anchor 0.5 0 0.5 0 OffsetLeft -260 OffsetTop 10 OffsetRight -260 OffsetBottom -156 } "Ignore Cursor" 1 {
+FrameWidgetClass { Name "RushCompass" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 87 OffsetTop 0 OffsetRight -433 OffsetBottom -35 } "Ignore Cursor" 1 Clipping True {
+CanvasWidgetClass { Name "CompassTicks" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 0 OffsetRight -346 OffsetBottom -35 } "Ignore Cursor" 1 }
+TextWidgetClass { Name "Heading0" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 0 OffsetRight -42 OffsetBottom -22 } Text "" Color 0.84 0.91 0.94 1
+ "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+TextWidgetClass { Name "Heading1" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 0 OffsetRight -42 OffsetBottom -22 } Text "" Color 0.84 0.91 0.94 1
+ "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+TextWidgetClass { Name "Heading2" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 0 OffsetRight -42 OffsetBottom -22 } Text "" Color 0.84 0.91 0.94 1
+ "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+TextWidgetClass { Name "Heading3" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 0 OffsetRight -42 OffsetBottom -22 } Text "" Color 0.84 0.91 0.94 1
+ "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+TextWidgetClass { Name "Heading4" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 0 OffsetRight -42 OffsetBottom -22 } Text "" Color 0.84 0.91 0.94 1
+ "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+TextWidgetClass { Name "Heading5" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 0 OffsetRight -42 OffsetBottom -22 } Text "" Color 0.84 0.91 0.94 1
+ "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+TextWidgetClass { Name "Heading6" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 0 OffsetRight -42 OffsetBottom -22 } Text "" Color 0.84 0.91 0.94 1
+ "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+} }
+SmartPanelWidgetClass { Name "TicketPlate" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 39 OffsetRight -79 OffsetBottom -71 } Color 0.09 0.028 0.026 0.94 "Ignore Cursor" 1 style rounded_2px }
+TextWidgetClass { Name "Tickets" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 38 OffsetRight -79 OffsetBottom -72 } Text "" Color 0.83 0.30 0.19 1
+ "Font Size" 26 "Min Font Size" 24 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+TextWidgetClass { Name "AttackerTicketsLabel" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 75 OffsetRight -79 OffsetBottom -95 } Text "US TICKETS" Color 0.84 0.91 0.94 1
+ "Font Size" 14 "Min Font Size" 12 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+SmartPanelWidgetClass { Name "RolePlate" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 441 OffsetTop 39 OffsetRight -520 OffsetBottom -71 } Color 0.017 0.052 0.081 0.94 "Ignore Cursor" 1 style rounded_2px }
+CanvasWidgetClass { Name "SectorTrack" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 39 OffsetRight -520 OffsetBottom -71 } "Ignore Cursor" 1 }
+TextWidgetClass { Name "Clock" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 441 OffsetTop 75 OffsetRight -520 OffsetBottom -95 } Text "" Color 0.84 0.91 0.94 1
+ "Font Size" 14 "Min Font Size" 12 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+CanvasWidgetClass { Name "ObjectiveABadge" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 225 OffsetTop 76 OffsetRight -257 OffsetBottom -110 } "Ignore Cursor" 1 }
+TextWidgetClass { Name "LetterA" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 225 OffsetTop 76 OffsetRight -257 OffsetBottom -106 } Text "A" Color 0.84 0.91 0.94 1
+ "Font Size" 17 "Min Font Size" 15 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+TextWidgetClass { Name "ObjectiveA" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 221 OffsetTop 108 OffsetRight -261 OffsetBottom -126 } Text "" Color 0.84 0.91 0.94 1
+ "Font Size" 13 "Min Font Size" 11 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+CanvasWidgetClass { Name "ObjectiveBBadge" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 261 OffsetTop 76 OffsetRight -293 OffsetBottom -110 } "Ignore Cursor" 1 }
+TextWidgetClass { Name "LetterB" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 261 OffsetTop 76 OffsetRight -293 OffsetBottom -106 } Text "B" Color 0.84 0.91 0.94 1
+ "Font Size" 17 "Min Font Size" 15 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+TextWidgetClass { Name "ObjectiveB" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 257 OffsetTop 108 OffsetRight -297 OffsetBottom -126 } Text "" Color 0.84 0.91 0.94 1
+ "Font Size" 13 "Min Font Size" 11 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+TextWidgetClass { Name "Notice" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft -80 OffsetTop 125 OffsetRight -600 OffsetBottom -146 } Text "" Color 0.84 0.91 0.94 1
+ "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+} }
+TextWidgetClass { Name "Prompt" Slot FrameWidgetSlot { Anchor 0.5 0.5 0.5 0.5 OffsetLeft -280 OffsetTop 98 OffsetRight -280 OffsetBottom -128 } Text "" Color 0.90 0.96 0.98 1
+ "Font Size" 20 "Min Font Size" 18 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+FrameWidgetClass {
+ Name "ReturnToSector"
+ Slot FrameWidgetSlot { Anchor 0.5 0.68 0.5 0.68 OffsetLeft -243 OffsetTop -54 OffsetRight -243 OffsetBottom -54 }
+ "Is Visible" 0
+ "Ignore Cursor" 1
+ "Z Order" 3
+ {
+  SmartPanelWidgetClass { Slot FrameWidgetSlot { Anchor 0 0 1 1 } Color 0.03 0.039 0.05 0.9 "Ignore Cursor" 1 style rounded_4px }
+  SmartPanelWidgetClass { Slot FrameWidgetSlot { Anchor 0 0 1 0 OffsetBottom -3 } Color 0.96 0.27 0.30 1 "Ignore Cursor" 1 style rounded_2px }
+  TextWidgetClass { Name "ReturnToSectorTitle" Slot FrameWidgetSlot { Anchor 0 0 1 0.55 OffsetLeft 12 OffsetTop 9 OffsetRight 12 } Text "RETURN TO THE COMBAT AREA" Color 0.98 0.96 0.94 1 "Font Size" 27 "Min Font Size" 19 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+  TextWidgetClass { Name "ReturnToSectorTime" Slot FrameWidgetSlot { Anchor 0 0.50 1 1 OffsetLeft 12 OffsetRight 12 OffsetBottom 11 } Text "" Color 1 0.43 0.45 1 "Font Size" 43 "Min Font Size" 29 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+ }
+}
+SmartPanelWidgetClass { Name "WeaponPlate" Slot FrameWidgetSlot { Anchor 1 1 1 1 OffsetLeft -346 OffsetTop -220 OffsetRight 36 OffsetBottom 104 } Color 0.025 0.045 0.055 0.80 "Ignore Cursor" 1 style rounded_2px }
+SmartPanelWidgetClass { Name "WeaponRule" Slot FrameWidgetSlot { Anchor 1 1 1 1 OffsetLeft -39 OffsetTop -220 OffsetRight 36 OffsetBottom 104 } Color 0.34 0.85 0.97 1 "Ignore Cursor" 1 style rounded_2px }
+TextWidgetClass { Name "Weapon" Slot FrameWidgetSlot { Anchor 1 1 1 1 OffsetLeft -330 OffsetTop -213 OffsetRight 52 OffsetBottom 189 } Text "" Color 0.90 0.96 0.98 1
+ "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Right "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 } }
+TextWidgetClass { Name "Ammo" Slot FrameWidgetSlot { Anchor 1 1 1 1 OffsetLeft -330 OffsetTop -189 OffsetRight 52 OffsetBottom 142 } Text "" Color 0.34 0.85 0.97 1
+ "Font Size" 38 "Min Font Size" 36 "Horizontal Alignment" Right "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 } }
+TextWidgetClass { Name "Equipment" Slot FrameWidgetSlot { Anchor 1 1 1 1 OffsetLeft -330 OffsetTop -135 OffsetRight 52 OffsetBottom 113 } Text "" Color 0.53 0.65 0.70 1
+ "Font Size" 14 "Min Font Size" 12 "Horizontal Alignment" Right "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 } }
+SmartPanelWidgetClass { Name "MapRule" Slot FrameWidgetSlot { Anchor 0 1 0 1 OffsetLeft 35 OffsetTop -353 OffsetRight -285 OffsetBottom 352 } Color 0.40 0.49 0.58 0.78 "Ignore Cursor" 1 style rounded_2px }
+TextWidgetClass { Name "MapHeading" Slot FrameWidgetSlot { Anchor 0 1 0 1 OffsetLeft 36 OffsetTop -379 OffsetRight -284 OffsetBottom 357 } Text "N  000°   ·   25 M GRID" Color 0.76 0.86 0.93 1
+ "Font Size" 14 "Min Font Size" 12 "Horizontal Alignment" Left "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+FrameWidgetClass { Name "MinimapFrame" Slot FrameWidgetSlot { Anchor 0 1 0 1 OffsetLeft 36 OffsetTop -352 OffsetRight -284 OffsetBottom 104 } "Ignore Cursor" 1 Clipping True {
+ SmartPanelWidgetClass { Name "MinimapBase" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetRight -248 OffsetBottom -248 } Color 0.043 0.067 0.10 1 "Ignore Cursor" 1 style rounded_2px }
+ ImageWidgetClass { Name "MinimapTerrain" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 0 OffsetTop 0 OffsetRight -248 OffsetBottom -248 } "Ignore Cursor" 1 Color 0.29 0.35 0.42 1 }
+ ImageWidgetClass { Name "MinimapDetail" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetRight -248 OffsetBottom -248 } "Ignore Cursor" 1 Color 0.345 0.396 0.459 0.55 }
+ SmartPanelWidgetClass { Name "MinimapShade" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetRight -248 OffsetBottom -248 } Color 0.006 0.012 0.021 0.68 "Ignore Cursor" 1 style rounded_2px }
+ CanvasWidgetClass { Name "Minimap" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetRight -248 OffsetBottom -248 } "Ignore Cursor" 1 }
+ SmartPanelWidgetClass { Name "MinimapBorderLeft" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetRight -1 OffsetBottom -248 } Color 0.36 0.45 0.54 0.62 "Ignore Cursor" 1 style rounded_2px }
+ SmartPanelWidgetClass { Name "MinimapBorderRight" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 247 OffsetRight -248 OffsetBottom -248 } Color 0.36 0.45 0.54 0.62 "Ignore Cursor" 1 style rounded_2px }
+ SmartPanelWidgetClass { Name "MinimapBorderBottom" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetTop 247 OffsetRight -248 OffsetBottom -248 } Color 0.36 0.45 0.54 0.62 "Ignore Cursor" 1 style rounded_2px }
+ TextWidgetClass { Name "MapObjectiveA" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetRight -14 OffsetBottom -14 } Text "A" Color 0.07 0.10 0.14 1
+  "Font Size" 11 "Min Font Size" 10 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 } }
+ TextWidgetClass { Name "MapObjectiveB" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetRight -14 OffsetBottom -14 } Text "B" Color 0.07 0.10 0.14 1
+  "Font Size" 11 "Min Font Size" 10 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 } }
+ TextWidgetClass { Name "Compass0" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 114 OffsetTop 3 OffsetRight -134 OffsetBottom -21 } Text "N" Color 0.95 1 1 1
+  "Font Size" 15 "Min Font Size" 13 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 3 ShadowOffset 1 1 } }
+ TextWidgetClass { Name "Compass1" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 226 OffsetTop 115 OffsetRight -246 OffsetBottom -133 } Text "E" Color 0.91 0.96 1 1
+  "Font Size" 13 "Min Font Size" 11 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 3 ShadowOffset 1 1 } }
+ TextWidgetClass { Name "Compass2" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 114 OffsetTop 227 OffsetRight -134 OffsetBottom -245 } Text "S" Color 0.91 0.96 1 1
+  "Font Size" 13 "Min Font Size" 11 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 3 ShadowOffset 1 1 } }
+ TextWidgetClass { Name "Compass3" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 2 OffsetTop 115 OffsetRight -22 OffsetBottom -133 } Text "W" Color 0.91 0.96 1 1
+  "Font Size" 13 "Min Font Size" 11 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 3 ShadowOffset 1 1 } }
+} }
+TextWidgetClass { Name "SquadLabel" Slot FrameWidgetSlot { Anchor 0 1 0 1 OffsetLeft 300 OffsetTop -330 OffsetRight -520 OffsetBottom 310 } Text "SQUAD" Color 0.45 0.80 0.51 1
+ "Font Size" 13 "Min Font Size" 11 "Horizontal Alignment" Left "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+HorizontalLayoutWidgetClass {
+ Name "SquadRow0"
+ Slot FrameWidgetSlot { Anchor 0 1 0 1 OffsetLeft 300 OffsetTop -304 OffsetRight -520 OffsetBottom 282 }
+ "Ignore Cursor" 1 Clipping True
+ {
+  SizeLayoutWidgetClass {
+   Name "SquadStatusSlot0"
+   Slot LayoutSlot { VerticalAlign 3 }
+   "Is Visible" 0 "Ignore Cursor" 1
+   AllowWidthOverride 1 WidthOverride 54
+   {
+    TextWidgetClass { Name "SquadStatus0" Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 } Text "" Color 0.52 1 0.52 1
+     "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Left "Vertical Alignment" Center
+     "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+   }
+  }
+  SizeLayoutWidgetClass {
+   Name "SquadLeader0"
+   Slot LayoutSlot { VerticalAlign 3 Padding 0 0 2 0 }
+   "Is Visible" 0 "Ignore Cursor" 1
+   AllowWidthOverride 1 WidthOverride 22
+   {
+    ImageWidgetClass {
+     Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 }
+     "Ignore Cursor" 1
+     Color 0.52 1 0.52 1
+     Texture "{3262679C50EF4F01}UI/Textures/Icons/icons_wrapperUI.imageset"
+     Image "favourite"
+     Size 22 22
+    }
+   }
+  }
+  TextWidgetClass { Name "Squad0" Slot LayoutSlot { VerticalAlign 3 SizeMode Fill FillWeight 1 } Text "" Color 0.52 1 0.52 1
+   "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Left "Vertical Alignment" Center
+   "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+ }
+}
+HorizontalLayoutWidgetClass {
+ Name "SquadRow1"
+ Slot FrameWidgetSlot { Anchor 0 1 0 1 OffsetLeft 300 OffsetTop -280 OffsetRight -520 OffsetBottom 258 }
+ "Ignore Cursor" 1 Clipping True
+ {
+  SizeLayoutWidgetClass {
+   Name "SquadStatusSlot1"
+   Slot LayoutSlot { VerticalAlign 3 }
+   "Is Visible" 0 "Ignore Cursor" 1
+   AllowWidthOverride 1 WidthOverride 54
+   {
+    TextWidgetClass { Name "SquadStatus1" Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 } Text "" Color 0.52 1 0.52 1
+     "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Left "Vertical Alignment" Center
+     "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+   }
+  }
+  SizeLayoutWidgetClass {
+   Name "SquadLeader1"
+   Slot LayoutSlot { VerticalAlign 3 Padding 0 0 2 0 }
+   "Is Visible" 0 "Ignore Cursor" 1
+   AllowWidthOverride 1 WidthOverride 22
+   {
+    ImageWidgetClass {
+     Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 }
+     "Ignore Cursor" 1
+     Color 0.52 1 0.52 1
+     Texture "{3262679C50EF4F01}UI/Textures/Icons/icons_wrapperUI.imageset"
+     Image "favourite"
+     Size 22 22
+    }
+   }
+  }
+  TextWidgetClass { Name "Squad1" Slot LayoutSlot { VerticalAlign 3 SizeMode Fill FillWeight 1 } Text "" Color 0.52 1 0.52 1
+   "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Left "Vertical Alignment" Center
+   "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+ }
+}
+HorizontalLayoutWidgetClass {
+ Name "SquadRow2"
+ Slot FrameWidgetSlot { Anchor 0 1 0 1 OffsetLeft 300 OffsetTop -256 OffsetRight -520 OffsetBottom 234 }
+ "Ignore Cursor" 1 Clipping True
+ {
+  SizeLayoutWidgetClass {
+   Name "SquadStatusSlot2"
+   Slot LayoutSlot { VerticalAlign 3 }
+   "Is Visible" 0 "Ignore Cursor" 1
+   AllowWidthOverride 1 WidthOverride 54
+   {
+    TextWidgetClass { Name "SquadStatus2" Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 } Text "" Color 0.52 1 0.52 1
+     "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Left "Vertical Alignment" Center
+     "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+   }
+  }
+  SizeLayoutWidgetClass {
+   Name "SquadLeader2"
+   Slot LayoutSlot { VerticalAlign 3 Padding 0 0 2 0 }
+   "Is Visible" 0 "Ignore Cursor" 1
+   AllowWidthOverride 1 WidthOverride 22
+   {
+    ImageWidgetClass {
+     Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 }
+     "Ignore Cursor" 1
+     Color 0.52 1 0.52 1
+     Texture "{3262679C50EF4F01}UI/Textures/Icons/icons_wrapperUI.imageset"
+     Image "favourite"
+     Size 22 22
+    }
+   }
+  }
+  TextWidgetClass { Name "Squad2" Slot LayoutSlot { VerticalAlign 3 SizeMode Fill FillWeight 1 } Text "" Color 0.52 1 0.52 1
+   "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Left "Vertical Alignment" Center
+   "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+ }
+}
+HorizontalLayoutWidgetClass {
+ Name "SquadRow3"
+ Slot FrameWidgetSlot { Anchor 0 1 0 1 OffsetLeft 300 OffsetTop -232 OffsetRight -520 OffsetBottom 210 }
+ "Ignore Cursor" 1 Clipping True
+ {
+  SizeLayoutWidgetClass {
+   Name "SquadStatusSlot3"
+   Slot LayoutSlot { VerticalAlign 3 }
+   "Is Visible" 0 "Ignore Cursor" 1
+   AllowWidthOverride 1 WidthOverride 54
+   {
+    TextWidgetClass { Name "SquadStatus3" Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 } Text "" Color 0.52 1 0.52 1
+     "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Left "Vertical Alignment" Center
+     "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+   }
+  }
+  SizeLayoutWidgetClass {
+   Name "SquadLeader3"
+   Slot LayoutSlot { VerticalAlign 3 Padding 0 0 2 0 }
+   "Is Visible" 0 "Ignore Cursor" 1
+   AllowWidthOverride 1 WidthOverride 22
+   {
+    ImageWidgetClass {
+     Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 }
+     "Ignore Cursor" 1
+     Color 0.52 1 0.52 1
+     Texture "{3262679C50EF4F01}UI/Textures/Icons/icons_wrapperUI.imageset"
+     Image "favourite"
+     Size 22 22
+    }
+   }
+  }
+  TextWidgetClass { Name "Squad3" Slot LayoutSlot { VerticalAlign 3 SizeMode Fill FillWeight 1 } Text "" Color 0.52 1 0.52 1
+   "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Left "Vertical Alignment" Center
+   "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+ }
+}
+HorizontalLayoutWidgetClass {
+ Name "SquadRow4"
+ Slot FrameWidgetSlot { Anchor 0 1 0 1 OffsetLeft 300 OffsetTop -208 OffsetRight -520 OffsetBottom 186 }
+ "Ignore Cursor" 1 Clipping True
+ {
+  SizeLayoutWidgetClass {
+   Name "SquadStatusSlot4"
+   Slot LayoutSlot { VerticalAlign 3 }
+   "Is Visible" 0 "Ignore Cursor" 1
+   AllowWidthOverride 1 WidthOverride 54
+   {
+    TextWidgetClass { Name "SquadStatus4" Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 } Text "" Color 0.52 1 0.52 1
+     "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Left "Vertical Alignment" Center
+     "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+   }
+  }
+  SizeLayoutWidgetClass {
+   Name "SquadLeader4"
+   Slot LayoutSlot { VerticalAlign 3 Padding 0 0 2 0 }
+   "Is Visible" 0 "Ignore Cursor" 1
+   AllowWidthOverride 1 WidthOverride 22
+   {
+    ImageWidgetClass {
+     Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 }
+     "Ignore Cursor" 1
+     Color 0.52 1 0.52 1
+     Texture "{3262679C50EF4F01}UI/Textures/Icons/icons_wrapperUI.imageset"
+     Image "favourite"
+     Size 22 22
+    }
+   }
+  }
+  TextWidgetClass { Name "Squad4" Slot LayoutSlot { VerticalAlign 3 SizeMode Fill FillWeight 1 } Text "" Color 0.52 1 0.52 1
+   "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Left "Vertical Alignment" Center
+   "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+ }
+}
+HorizontalLayoutWidgetClass {
+ Name "SquadRow5"
+ Slot FrameWidgetSlot { Anchor 0 1 0 1 OffsetLeft 300 OffsetTop -184 OffsetRight -520 OffsetBottom 162 }
+ "Ignore Cursor" 1 Clipping True
+ {
+  SizeLayoutWidgetClass {
+   Name "SquadStatusSlot5"
+   Slot LayoutSlot { VerticalAlign 3 }
+   "Is Visible" 0 "Ignore Cursor" 1
+   AllowWidthOverride 1 WidthOverride 54
+   {
+    TextWidgetClass { Name "SquadStatus5" Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 } Text "" Color 0.52 1 0.52 1
+     "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Left "Vertical Alignment" Center
+     "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+   }
+  }
+  SizeLayoutWidgetClass {
+   Name "SquadLeader5"
+   Slot LayoutSlot { VerticalAlign 3 Padding 0 0 2 0 }
+   "Is Visible" 0 "Ignore Cursor" 1
+   AllowWidthOverride 1 WidthOverride 22
+   {
+    ImageWidgetClass {
+     Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 }
+     "Ignore Cursor" 1
+     Color 0.52 1 0.52 1
+     Texture "{3262679C50EF4F01}UI/Textures/Icons/icons_wrapperUI.imageset"
+     Image "favourite"
+     Size 22 22
+    }
+   }
+  }
+  TextWidgetClass { Name "Squad5" Slot LayoutSlot { VerticalAlign 3 SizeMode Fill FillWeight 1 } Text "" Color 0.52 1 0.52 1
+   "Font Size" 16 "Min Font Size" 14 "Horizontal Alignment" Left "Vertical Alignment" Center
+   "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+ }
+}
+FrameWidgetClass { Name "WaypointA" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetRight -76 OffsetBottom -52 } "Ignore Cursor" 1 {
+ TextWidgetClass { Name "Order" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft -18 OffsetTop -18 OffsetRight -94 OffsetBottom 0 } Text "" Color 0.92 0.76 0.48 1
+  "Font Size" 14 "Min Font Size" 12 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+ CanvasWidgetClass { Name "Badge" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 23 OffsetTop 0 OffsetRight -53 OffsetBottom -30 } "Ignore Cursor" 1 }
+ TextWidgetClass { Name "Letter" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 23 OffsetTop 0 OffsetRight -53 OffsetBottom -27 } Text "A" Color 0.84 0.91 0.94 1
+ "Font Size" 19 "Min Font Size" 17 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+ TextWidgetClass { Name "Distance" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetTop 31 OffsetRight -76 OffsetBottom -52 } Text "" Color 0.95 0.99 1 1
+  "Font Size" 15 "Min Font Size" 9 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 3 ShadowOffset 1 1 } }
+} }
+FrameWidgetClass { Name "WaypointB" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetRight -76 OffsetBottom -52 } "Ignore Cursor" 1 {
+ TextWidgetClass { Name "Order" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft -18 OffsetTop -18 OffsetRight -94 OffsetBottom 0 } Text "" Color 0.92 0.76 0.48 1
+  "Font Size" 14 "Min Font Size" 12 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+ CanvasWidgetClass { Name "Badge" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 23 OffsetTop 0 OffsetRight -53 OffsetBottom -30 } "Ignore Cursor" 1 }
+ TextWidgetClass { Name "Letter" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetLeft 23 OffsetTop 0 OffsetRight -53 OffsetBottom -27 } Text "B" Color 0.84 0.91 0.94 1
+ "Font Size" 19 "Min Font Size" 17 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 2 ShadowOffset 1 1 } }
+ TextWidgetClass { Name "Distance" Slot FrameWidgetSlot { Anchor 0 0 0 0 OffsetTop 31 OffsetRight -76 OffsetBottom -52 } Text "" Color 0.95 0.99 1 1
+  "Font Size" 15 "Min Font Size" 9 "Horizontal Alignment" Center "Vertical Alignment" Center "Ignore Cursor" 1 FontProperties FontProperties { Bold 1 ShadowSize 3 ShadowOffset 1 1 } }
+} }
+TextWidgetClass { Name "EnemyAimName" Slot FrameWidgetSlot { Anchor 0.5 0.5 0.5 0.5 OffsetLeft -160 OffsetTop -90 OffsetRight -160 OffsetBottom 62 } Text "" Color 1 0.25 0.33 1
+ "Font Size" 21 "Min Font Size" 16 "Horizontal Alignment" Center "Vertical Alignment" Center
+ "Ignore Cursor" 1 Clipping True FontProperties FontProperties { Bold 1 ShadowSize 3 ShadowOffset 1 1 } }
+}
+}

@@ -1,0 +1,42 @@
+GenericEntity {
+ ID "6AC8EC4E63A520B0"
+ components {
+  SignalsManagerComponent "{D473030000000027}" {
+  }
+  BaseRadioComponent "{D473030000000022}" {
+   Transceivers {
+    RadioTransceiver "{D473030000000001}" {
+     ChannelFrequency 62000
+     "Transmitting Range" 65535
+     "Min tunable frequency" 62000
+     "Max tunable frequency" 62000
+     "Frequency resolution" 1
+    }
+   }
+  }
+  InventoryItemComponent "{D473030000000024}" {
+   Attributes SCR_ItemAttributeCollection "{D473030000000025}" {
+    ItemDisplayName UIInfo "{3D4EEC5A94BF9253}" {
+     Name "Public Radio"
+     Icon "{2FBD8DA665FB8AF1}UI/Textures/VON/ANPRC68-100px_UI.edds"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0
+     ItemDimensions 0 0 0
+     ItemVolume 0
+    }
+    m_bDraggable 0
+    m_bVisible 0
+    m_bRefundable 0
+   }
+  }
+  SCR_RadioComponent "{D473030000000026}" {
+   m_bCanBeHeld 0
+   m_iRadioType R148
+  }
+  RplComponent "{D473030000000021}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+ }
+}

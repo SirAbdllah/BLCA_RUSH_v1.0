@@ -1,0 +1,27 @@
+SCR_BaseGameMode : "{1B6C9BC044DA3B21}Prefabs/MP/Modes/TeamDeathmatch/GameMode_TeamDeathmatch_Selection.et" {
+ ID "56B2B479C6B96951"
+ components {
+  Persistence "{65B27918147B3DEC}" {
+   Enabled 0
+  }
+  SCR_CommandingManagerComponent "{691A7509108F9878}" {
+  }
+  SCR_ScoringSystemComponent "{56B6E8B6EF9762E8}" {
+   Enabled 0
+  }
+  SCR_RespawnTimerComponent "{56B2F0110FB59E75}" {
+   m_fRespawnTime 8
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   components {
+    SCR_SpawnPointSpawnHandlerComponent "{5CD2D126957998DF}" {
+     m_bDeletePreviousControlledEntity 0
+    }
+   }
+  }
+
+  BLCA_RushGameModeComponent "{02A648A846E08DE4}" {
+  }
+ }
+ PlayerControllerPrefab "{A1AE127F16DD352E}Prefabs/Characters/Core/DefaultPlayerControllerMP_Factions.et"
+}

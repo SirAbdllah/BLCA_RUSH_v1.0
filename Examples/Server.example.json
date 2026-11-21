@@ -1,0 +1,25 @@
+{
+  "bindAddress": "0.0.0.0",
+  "bindPort": 2001,
+  "publicAddress": "",
+  "publicPort": 2001,
+  "a2s": {
+    "address": "0.0.0.0",
+    "port": 17777
+  },
+  "game": {
+    "name": "BLCA RUSH",
+    "scenarioId": "{94AA9386CDB35E4F}Missions/BLCA_Rush_Arland.conf",
+    "maxPlayers": 64,
+    "visible": true,
+    "gameProperties": {
+      "battlEye": true
+    },
+    "mods": [
+      {
+        "modId": "B1CA525553480001",
+        "name": "BLCA RUSH"
+      }
+    ]
+  }
+}

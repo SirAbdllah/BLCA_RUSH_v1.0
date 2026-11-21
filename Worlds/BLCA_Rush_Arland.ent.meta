@@ -1,0 +1,11 @@
+MetaFileClass {
+ Name "{672AAAA8E0FB5982}Worlds/BLCA_Rush_Arland.ent"
+ Configurations {
+  ENTResourceClass PC {}
+  ENTResourceClass XBOX_ONE : PC {}
+  ENTResourceClass XBOX_SERIES : PC {}
+  ENTResourceClass PS4 : PC {}
+  ENTResourceClass PS5 : PC {}
+  ENTResourceClass HEADLESS : PC {}
+ }
+}

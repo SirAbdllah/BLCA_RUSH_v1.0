@@ -1,0 +1,27 @@
+{
+  "rush": {
+    "MinimumPlayers": 2,
+    "WarmupSeconds": 20,
+    "AttackerTickets": 100,
+    "DetonationSeconds": 30,
+    "PlantSeconds": 4,
+    "DefuseSeconds": 5,
+    "TransitionSeconds": 15,
+    "AttackerRespawnSeconds": 8,
+    "DefenderRespawnSeconds": 10,
+    "RoundMinutes": 45,
+    "RetreatGraceSeconds": 20,
+    "ScoreboardSeconds": 16,
+    "KillScore": 100,
+    "PlantScore": 200,
+    "DefuseScore": 200,
+    "DestroyScore": 300,
+    "SectorScore": 150,
+    "CorpseSeconds": 15,
+    "EnforceSpawnSafety": true,
+    "BalanceTeams": true,
+    "AutoAssignSquads": true,
+    "SquadSize": 4,
+    "SpawnSafetyMeters": 25
+  }
+}

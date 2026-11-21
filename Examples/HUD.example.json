@@ -1,0 +1,8 @@
+{
+  "hud": {
+    "Minimap": true,
+    "AudioAlerts": true,
+    "SquadNames": true,
+    "MapHalfRange": 80
+  }
+}

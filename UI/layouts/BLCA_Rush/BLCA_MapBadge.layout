@@ -1,0 +1,41 @@
+FrameWidgetClass {
+ Name "BLCA_RushMapBadge"
+ Slot FrameWidgetSlot { Anchor 0.5 0.5 0.5 0.5 OffsetLeft -17 OffsetTop -17 OffsetRight -17 OffsetBottom -17 }
+ "Z Order" 3
+ "Ignore Cursor" 1
+ {
+  SmartPanelWidgetClass {
+   Name "Border"
+   Slot FrameWidgetSlot { Anchor 0 0 1 1 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 }
+   Color 0.098 0.208 0.275 0.894
+   "Ignore Cursor" 1
+   style rounded_2px
+  }
+  SmartPanelWidgetClass {
+   Name "Badge"
+   Slot FrameWidgetSlot { Anchor 0 0 1 1 OffsetLeft 2 OffsetTop 2 OffsetRight 2 OffsetBottom 2 }
+   Color 0.576 0.91 0.984 1
+   "Ignore Cursor" 1
+   style rounded_2px
+  }
+  TextWidgetClass {
+   Name "Letter"
+   Slot FrameWidgetSlot { Anchor 0 0 1 1 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 }
+   "Is Visible" 0
+   Color 0.03 0.11 0.16 1
+   "Font Size" 22
+   "Min Font Size" 15
+   "Horizontal Alignment" Center
+   "Vertical Alignment" Center
+   "Ignore Cursor" 1
+   FontProperties FontProperties { Bold 1 }
+  }
+  ImageWidgetClass {
+   Name "Pin"
+   Slot FrameWidgetSlot { Anchor 0 0 1 1 OffsetLeft 5 OffsetTop 5 OffsetRight 5 OffsetBottom 5 }
+   "Is Visible" 0
+   Color 0.03 0.11 0.16 1
+   "Ignore Cursor" 1
+  }
+ }
+}

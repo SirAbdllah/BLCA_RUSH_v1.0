@@ -1,0 +1,58 @@
+FrameWidgetClass {
+ Name "BLCA_LoadingArtwork"
+ Slot FrameWidgetSlot { Anchor 0 0 1 1 }
+ "Ignore Cursor" 1
+ Clipping True
+ {
+  ScaleWidgetClass {
+   Name "BLCA_LoadingCover"
+   Slot FrameWidgetSlot { Anchor 0 0 1 1 }
+   "Ignore Cursor" 1
+   "Scale Mode" "Scale to fill"
+   {
+    ImageWidgetClass {
+     Name "BLCA_LoadingImage"
+     Slot AlignableSlot { HorizontalAlign 1 VerticalAlign 1 }
+     "Ignore Cursor" 1
+     Size 1672 941
+     "Blend Mode" Opaque
+    }
+   }
+  }
+  SmartPanelWidgetClass {
+   Name "BLCA_LoadingAccent"
+   Slot FrameWidgetSlot { Anchor 0.06 0.71 0.06 0.71 OffsetRight -56 OffsetBottom -3 }
+   "Ignore Cursor" 1
+   Color 0.37 0.84 1 1
+   style rounded_2px
+  }
+  TextWidgetClass {
+   Name "BLCA_LoadingTitle"
+   Slot FrameWidgetSlot { Anchor 0.06 0.71 0.94 0.71 OffsetTop 15 OffsetBottom -84 }
+   "Ignore Cursor" 1
+   Text "BLCA RUSH"
+   Color 0.95 0.98 1 1
+   "Font Size" 64
+   "Min Font Size" 42
+   "Horizontal Alignment" Left
+   "Vertical Alignment" Center
+   FontProperties FontProperties {
+    Font "{CD2634D279AB011A}UI/Fonts/Roboto/Roboto_Bold.fnt"
+    Bold 1
+    ShadowSize 3
+    ShadowOffset 1 1
+   }
+  }
+  TextWidgetClass {
+   Name "BLCA_LoadingAuthor"
+   Slot FrameWidgetSlot { Anchor 0.06 0.71 0.94 0.71 OffsetTop 91 OffsetBottom -124 }
+   "Ignore Cursor" 1
+   Color 0.72 0.89 0.97 1
+   "Font Size" 22
+   "Min Font Size" 16
+   "Horizontal Alignment" Left
+   "Vertical Alignment" Center
+   FontProperties FontProperties { Bold 1 ShadowSize 3 ShadowOffset 1 1 }
+  }
+ }
+}

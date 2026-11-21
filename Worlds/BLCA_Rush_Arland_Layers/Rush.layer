@@ -1,0 +1,257 @@
+SCR_BaseGameMode BLCA_Mode : "{5F06BCF277DE5E71}Prefabs/BLCA_Rush/BLCA_GameMode.et" {
+ coords 1100 40 2500
+}
+SCR_FactionManager BLCA_Factions : "{589540B35EBA8CDC}Prefabs/MP/Managers/Factions/FactionManager_USxUSSR.et" {
+ coords 1100 40 2500
+}
+SCR_LoadoutManager BLCA_Loadouts : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
+ coords 1100 40 2500
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{3CB542A687EC78BB}" : "{7C7C65FD583E6612}Configs/Loadouts/US/Regular/Loadout_US_Rifleman.conf" {
+   m_sLoadoutName "ASSAULT"
+  }
+  SCR_FactionPlayerLoadout "{DC831447F7629052}" : "{121FC1ABB7FE098C}Configs/Loadouts/US/Regular/Loadout_US_LAT.conf" {
+   m_sLoadoutName "ENGINEER"
+  }
+  SCR_FactionPlayerLoadout "{5B2FEC171B6869DF}" : "{AFA36BB8828E381A}Configs/Loadouts/US/Regular/Loadout_US_MG.conf" {
+   m_sLoadoutName "SUPPORT"
+  }
+  SCR_FactionPlayerLoadout "{1F005E402860A414}" : "{0EFB9B7C7EF8B247}Configs/Loadouts/US/Regular/Loadout_US_Sniper.conf" {
+   m_sLoadoutName "RECON"
+  }
+  SCR_FactionPlayerLoadout "{AD8F8598264058A8}" : "{5F9034642E99437D}Configs/Loadouts/USSR/Regular/Loadout_USSR_Rifleman.conf" {
+   m_sLoadoutName "ASSAULT"
+  }
+  SCR_FactionPlayerLoadout "{6381E16BABE66BBC}" : "{C1C1DB68C6FC265B}Configs/Loadouts/USSR/Regular/Loadout_USSR_AT.conf" {
+   m_sLoadoutName "ENGINEER"
+  }
+  SCR_FactionPlayerLoadout "{41709C3C6424BB95}" : "{E97C426E941D8FDC}Configs/Loadouts/USSR/Regular/Loadout_USSR_MG.conf" {
+   m_sLoadoutName "SUPPORT"
+  }
+  SCR_FactionPlayerLoadout "{369DA26A8DFA9147}" : "{FB56BAF9A1BBAB39}Configs/Loadouts/USSR/Regular/Loadout_USSR_Sharpshooter.conf" {
+   m_sLoadoutName "RECON"
+  }
+ }
+}
+SCR_AIWorld BLCA_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ coords 1100 40 2500
+}
+PerceptionManager BLCA_Perception : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 1100 40 2500
+}
+RadioManagerEntity BLCA_Radio {
+ coords 1100 40 2500
+ components {
+  RplComponent "{7DA24B477112B24E}" {}
+ }
+}
+GenericEntity BLCA_Sector_0 {
+ coords 1100 38.4218 2500
+ components {
+  BLCA_RushSectorComponent "{19285216D2533000}" {
+   Index 0
+   Title "Arland Sector 1"
+   ObjectiveA "BLCA_0_A"
+   ObjectiveB "BLCA_0_B"
+   AttackSpawn "BLCA_0_Attack"
+   DefendSpawn "BLCA_0_Defend"
+   DefendSpawnA "BLCA_0_DefendA"
+   DefendSpawnB "BLCA_0_DefendB"
+   BoundaryRadius 300
+  }
+ }
+}
+GenericEntity BLCA_0_A : "{5CC3A6A1318D523D}Prefabs/BLCA_Rush/BLCA_MCOM.et" {
+ coords 1100 39.6412 2535
+ components {
+  BLCA_RushObjectiveComponent "{02C1D77190A5C170}" { Sector 0 Letter 0 }
+ }
+}
+GenericEntity BLCA_0_B : "{5CC3A6A1318D523D}Prefabs/BLCA_Rush/BLCA_MCOM.et" {
+ coords 1100 38.9225 2465
+ components {
+  BLCA_RushObjectiveComponent "{02C1D77190A5C170}" { Sector 0 Letter 1 }
+ }
+}
+SCR_SpawnPoint BLCA_0_Attack : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+ coords 930 35.8688 2500
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 1 / Attack" }
+}
+SCR_SpawnPoint BLCA_0_Defend : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 1270 35.0562 2500
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 1 / Defend" }
+}
+SCR_SpawnPoint BLCA_0_DefendA : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 1200 39.9469 2535
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 1 / DefendA" }
+}
+SCR_SpawnPoint BLCA_0_DefendB : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 1200 38.1500 2465
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 1 / DefendB" }
+}
+GenericEntity BLCA_Sector_1 {
+ coords 1600 38.1484 2500
+ components {
+  BLCA_RushSectorComponent "{19285216D2533001}" {
+   Index 1
+   Title "Arland Sector 2"
+   ObjectiveA "BLCA_1_A"
+   ObjectiveB "BLCA_1_B"
+   AttackSpawn "BLCA_1_Attack"
+   DefendSpawn "BLCA_1_Defend"
+   DefendSpawnA "BLCA_1_DefendA"
+   DefendSpawnB "BLCA_1_DefendB"
+   BoundaryRadius 300
+  }
+ }
+}
+GenericEntity BLCA_1_A : "{5CC3A6A1318D523D}Prefabs/BLCA_Rush/BLCA_MCOM.et" {
+ coords 1600 37.2819 2535
+ components {
+  BLCA_RushObjectiveComponent "{02C1D77190A5C170}" { Sector 1 Letter 0 }
+ }
+}
+GenericEntity BLCA_1_B : "{5CC3A6A1318D523D}Prefabs/BLCA_Rush/BLCA_MCOM.et" {
+ coords 1600 40.7350 2465
+ components {
+  BLCA_RushObjectiveComponent "{02C1D77190A5C170}" { Sector 1 Letter 1 }
+ }
+}
+SCR_SpawnPoint BLCA_1_Attack : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+ coords 1430 36.1812 2500
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 2 / Attack" }
+}
+SCR_SpawnPoint BLCA_1_Defend : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 1770 43.0875 2500
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 2 / Defend" }
+}
+SCR_SpawnPoint BLCA_1_DefendA : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 1700 39.7438 2535
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 2 / DefendA" }
+}
+SCR_SpawnPoint BLCA_1_DefendB : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 1700 41.5250 2465
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 2 / DefendB" }
+}
+GenericEntity BLCA_Sector_2 {
+ coords 2100 64.4219 2500
+ components {
+  BLCA_RushSectorComponent "{19285216D2533002}" {
+   Index 2
+   Title "Arland Sector 3"
+   ObjectiveA "BLCA_2_A"
+   ObjectiveB "BLCA_2_B"
+   AttackSpawn "BLCA_2_Attack"
+   DefendSpawn "BLCA_2_Defend"
+   DefendSpawnA "BLCA_2_DefendA"
+   DefendSpawnB "BLCA_2_DefendB"
+   BoundaryRadius 300
+  }
+ }
+}
+GenericEntity BLCA_2_A : "{5CC3A6A1318D523D}Prefabs/BLCA_Rush/BLCA_MCOM.et" {
+ coords 2100 58.5944 2535
+ components {
+  BLCA_RushObjectiveComponent "{02C1D77190A5C170}" { Sector 2 Letter 0 }
+ }
+}
+GenericEntity BLCA_2_B : "{5CC3A6A1318D523D}Prefabs/BLCA_Rush/BLCA_MCOM.et" {
+ coords 2100 71.9694 2465
+ components {
+  BLCA_RushObjectiveComponent "{02C1D77190A5C170}" { Sector 2 Letter 1 }
+ }
+}
+SCR_SpawnPoint BLCA_2_Attack : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+ coords 1930 56.2750 2500
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 3 / Attack" }
+}
+SCR_SpawnPoint BLCA_2_Defend : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 2270 67.4312 2500
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 3 / Defend" }
+}
+SCR_SpawnPoint BLCA_2_DefendA : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 2200 59.4000 2535
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 3 / DefendA" }
+}
+SCR_SpawnPoint BLCA_2_DefendB : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 2200 71.9469 2465
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 3 / DefendB" }
+}
+GenericEntity BLCA_Sector_3 {
+ coords 2600 111.0550 2500
+ components {
+  BLCA_RushSectorComponent "{19285216D2533003}" {
+   Index 3
+   Title "Arland Sector 4"
+   ObjectiveA "BLCA_3_A"
+   ObjectiveB "BLCA_3_B"
+   AttackSpawn "BLCA_3_Attack"
+   DefendSpawn "BLCA_3_Defend"
+   DefendSpawnA "BLCA_3_DefendA"
+   DefendSpawnB "BLCA_3_DefendB"
+   BoundaryRadius 300
+  }
+ }
+}
+GenericEntity BLCA_3_A : "{5CC3A6A1318D523D}Prefabs/BLCA_Rush/BLCA_MCOM.et" {
+ coords 2600 110.2040 2535
+ components {
+  BLCA_RushObjectiveComponent "{02C1D77190A5C170}" { Sector 3 Letter 0 }
+ }
+}
+GenericEntity BLCA_3_B : "{5CC3A6A1318D523D}Prefabs/BLCA_Rush/BLCA_MCOM.et" {
+ coords 2600 113.6260 2465
+ components {
+  BLCA_RushObjectiveComponent "{02C1D77190A5C170}" { Sector 3 Letter 1 }
+ }
+}
+SCR_SpawnPoint BLCA_3_Attack : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+ coords 2430 98.3375 2500
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 4 / Attack" }
+}
+SCR_SpawnPoint BLCA_3_Defend : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 2770 73.6188 2500
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 4 / Defend" }
+}
+SCR_SpawnPoint BLCA_3_DefendA : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 2700 86.0250 2535
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 4 / DefendA" }
+}
+SCR_SpawnPoint BLCA_3_DefendB : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 2700 87.5719 2465
+ m_bSpawnPointEnabled 0
+ m_bShowInDeployMapOnly 1
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" { Name "Sector 4 / DefendB" }
+}
+SCR_EditorManagerEntity BLCA_Editor { coords 1100 40 2500 }
+ScriptedChatEntity BLCA_Chat : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" { coords 1100 40 2500 }
